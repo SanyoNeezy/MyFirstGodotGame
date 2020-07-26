@@ -14,6 +14,7 @@ var velocity : Vector2 = Vector2()
 onready var sprite : Sprite = get_node("Sprite")
 
 #built-in function of KinematicBody2D
+#gets called 60 times per second regardless of framerate
 func _physics_process(delta):
 	velocity.x = 0
 
