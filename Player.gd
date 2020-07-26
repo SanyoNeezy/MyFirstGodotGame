@@ -46,3 +46,13 @@ func _physics_process(delta):
 	elif velocity.x > 0 :
 		sprite.flip_h = false
 	
+
+
+func die():
+	#get_tree() holt sich den höchsten Node ausgehend vom aktuellen Node
+	# (hier also MainScene)
+	get_tree().reload_current_scene()
+
+
+func collect_coin(value):
+	score += value

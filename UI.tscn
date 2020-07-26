@@ -1,0 +1,41 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://assets/Sprites/Coin.png" type="Texture" id=1]
+[ext_resource path="res://assets/Font/ubuntu-regular.tres" type="DynamicFont" id=2]
+
+[node name="UI" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CoinTexture" type="TextureRect" parent="."]
+anchor_left = 0.937
+anchor_top = 0.853
+anchor_right = 0.937
+anchor_bottom = 0.867
+margin_left = -127.488
+margin_top = 0.199921
+margin_right = -63.4881
+margin_bottom = 55.7999
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ScoreText" type="Label" parent="."]
+anchor_left = 0.937
+anchor_top = 0.853
+anchor_right = 0.937
+anchor_bottom = 0.853
+margin_left = -63.488
+margin_top = 8.19998
+margin_right = 16.512
+margin_bottom = 56.2
+custom_fonts/font = ExtResource( 2 )
+text = "50"
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
