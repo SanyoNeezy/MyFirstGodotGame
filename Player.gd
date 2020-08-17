@@ -12,6 +12,9 @@ var velocity : Vector2 = Vector2()
 
 #onready --> wird aufgerufen, sobald die Szene gestartet wird
 onready var sprite : Sprite = get_node("Sprite")
+onready var ui : Node = get_node("/root/MainScene/CanvasLayer/UI")
+onready var scoreText_Label : Node = get_node("/root/MainScene/CanvasLayer/UI/ScoreText")
+
 
 #built-in function of KinematicBody2D
 #gets called 60 times per second regardless of framerate
@@ -56,3 +59,4 @@ func die():
 
 func collect_coin(value):
 	score += value
+	ui.set_score_text(score)
